@@ -1,0 +1,18 @@
+package com.marzo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MarzoController {
+	
+	
+	@GetMapping(value="/marzo")
+	public String marzo() {
+		return "marzo ";
+		
+	}
+	
+	
+
+}

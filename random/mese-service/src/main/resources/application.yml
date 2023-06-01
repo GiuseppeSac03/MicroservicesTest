@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mese-service
+
+server:
+  port: 0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka/
+
+#ribbon:
+#  eager-load:
+#    enabled: true
+#  eureka:
+#    enabled: true

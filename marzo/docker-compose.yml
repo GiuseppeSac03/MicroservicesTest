@@ -1,0 +1,33 @@
+version: '3.7'
+
+services:
+
+  ibm:
+    container_name: ibm
+    image: ibm-cloud-academy/ibm:v1
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - ibm-cloud
+
+  marzo:
+    image: ibm-cloud-academy/marzo:v1
+    restart: always
+    networks:
+      - ibm-cloud
+
+  academy:
+    image: ibm-cloud-academy/academy:v1
+    restart: always
+    networks:
+      - ibm-cloud
+  cloud:
+    image: ibm-cloud-academy/cloud:v1
+    restart: always
+    networks:
+      - ibm-cloud
+
+
+networks:
+  ibm-cloud:
